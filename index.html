@@ -33,6 +33,9 @@
 </head>
 <body>
 
+  <!-- Site-wide Baul motif watermark -->
+  <div class="page-baul" aria-hidden="true"></div>
+
   <!-- ── NAVBAR ── -->
   <nav id="navbar">
     <div class="nav-inner">
@@ -131,6 +134,21 @@
     </div>
   </section>
 
+  <!-- ── PROMO VIDEO ── -->
+  <section id="promo-video">
+    <div class="alpona-divider" style="background-color: var(--surface);"></div>
+    <div class="section-inner" style="background: var(--surface);">
+      <h2 class="section-title">A Taste of What's Coming</h2>
+      <p class="section-subtitle">Opening July 15 at CSK Mall, Gunjur</p>
+      <div class="video-wrap">
+        <video autoplay muted loop playsinline poster="assets/images/hero-bg.jpg">
+          <source src="assets/promo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div class="alpona-divider"></div>
+  </section>
+
   <!-- ── MENU ── -->
   <section id="menu">
     <div class="alpona-divider" style="background-color: var(--surface);"></div>
@@ -192,6 +210,7 @@
     <div class="section-inner">
       <div class="about-grid">
         <div class="about-text">
+          <img src="assets/images/logo.jpg" alt="Bangla Ekhane logo" class="about-logo" />
           <p class="section-subtitle" style="text-align:left; margin-bottom: 8px;">Our Story</p>
           <h2 style="font-family: var(--font-heading); color: var(--primary); margin-bottom: 24px; font-size: clamp(1.5rem, 3vw, 2.25rem);">বাংলা এখানে।<br/>Bengal is here.</h2>
           <p>It started with homesickness.</p>
@@ -205,8 +224,9 @@
             <span>Dine-In &amp; Takeaway</span>
           </div>
         </div>
-        <div class="about-image">
-          <img src="assets/images/gallery-family.jpg" alt="Joyful family dining together at Bangla Ekhane" loading="lazy" />
+        <div class="about-photos">
+          <img src="assets/images/gallery-food.jpg" alt="Bengali food spread" loading="lazy" />
+          <img src="assets/images/gallery-family.jpg" alt="Family dining together" loading="lazy" />
         </div>
       </div>
     </div>

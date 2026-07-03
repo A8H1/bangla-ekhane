@@ -185,6 +185,16 @@ h3 { font-size: 1.1rem; }
   position: absolute; inset: 0;
   background: linear-gradient(to bottom, rgba(10,3,0,0.72) 0%, rgba(10,3,0,0.55) 100%);
 }
+.page-baul {
+  position: fixed;
+  inset: 0;
+  background-image: url('../assets/images/baul-motif.jpg');
+  background-repeat: repeat;
+  background-size: 25vw 25vw;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 10;
+}
 .hero-content {
   position: relative; z-index: 1;
   text-align: center;
@@ -378,10 +388,41 @@ h3 { font-size: 1.1rem; }
   font-weight: 700;
   letter-spacing: 0.3px;
 }
-.about-image img {
+.about-logo {
+  width: 88px; height: 88px;
+  border-radius: 50%; object-fit: cover;
+  border: 2.5px solid var(--accent);
+  box-shadow: 0 4px 18px rgba(200,145,10,0.25);
+  margin-bottom: 18px;
+  display: block;
+}
+.about-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-self: stretch;
+}
+.about-photos img {
   width: 100%; border-radius: 10px;
   box-shadow: var(--shadow);
-  object-fit: cover;
+  object-fit: cover; height: 100%;
+  min-height: 200px;
+}
+
+/* ── PROMO VIDEO ── */
+#promo-video { padding: 0; }
+.video-wrap {
+  max-width: 720px;
+  margin: 32px auto 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 56px rgba(0,0,0,0.18);
+  background: #000;
+}
+.video-wrap video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* ══════════════════════════════════════
@@ -610,7 +651,8 @@ h3 { font-size: 1.1rem; }
    ══════════════════════════════════════ */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-image { order: -1; }
+  .about-photos { order: -1; grid-template-columns: 1fr 1fr; }
+  .about-logo { width: 64px; height: 64px; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-map iframe { height: 280px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
@@ -618,6 +660,7 @@ h3 { font-size: 1.1rem; }
 }
 
 @media (max-width: 768px) {
+  .page-baul { background-size: 50vw 50vw; opacity: 0.07; }
   .nav-hamburger { display: flex; }
   .nav-links {
     display: none;
