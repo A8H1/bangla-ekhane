@@ -334,13 +334,20 @@ h3 { font-size: 1.1rem; }
   padding: 16px;
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .menu-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .menu-card h3 { font-size: 1rem; margin-bottom: 4px; color: var(--primary); font-family: var(--font-heading); }
 .menu-card p  { font-size: 0.82rem; color: #555; line-height: 1.5; }
+.menu-thumb {
+  width: 72px; height: 72px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-left: auto;
+}
 .menu-download {
   text-align: center;
   margin-top: 52px;
