@@ -1,4 +1,4 @@
-const LAUNCH = new Date('2026-07-15T11:00:00+05:30').getTime();
+const LAUNCH = new Date('2026-07-06T00:00:00+05:30').getTime();
 
 const elDays    = document.getElementById('cd-days');
 const elHours   = document.getElementById('cd-hours');
