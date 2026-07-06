@@ -175,7 +175,7 @@ h3 { font-size: 1.1rem; }
    ══════════════════════════════════════ */
 #home { padding: 0; }
 .hero-bg {
-  min-height: 100vh;
+  min-height: 85vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -203,7 +203,7 @@ h3 { font-size: 1.1rem; }
   max-width: 720px;
 }
 .hero-logo {
-  width: 110px; height: 110px;
+  width: 145px; height: 145px;
   border-radius: 50%; object-fit: cover;
   border: 3px solid rgba(200,145,10,0.6);
   margin: 0 auto 20px;
