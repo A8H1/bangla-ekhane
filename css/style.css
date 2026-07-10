@@ -176,14 +176,25 @@ h3 { font-size: 1.1rem; }
 #home { padding: 0; }
 .hero-bg {
   min-height: 85vh;
+  background: #4a1200;
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background-image: url('../assets/images/hero-bg-banner.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
-  display: flex; align-items: center; justify-content: center;
+  filter: blur(5px) brightness(0.55) saturate(0.95);
+  z-index: 0;
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, rgba(10,3,0,0.72) 0%, rgba(10,3,0,0.55) 100%);
+  background: linear-gradient(to bottom, rgba(10,3,0,0.5) 0%, rgba(10,3,0,0.68) 100%);
+  z-index: 0;
 }
 .page-baul {
   position: fixed;
