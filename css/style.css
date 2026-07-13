@@ -630,6 +630,7 @@ h3 { font-size: 1.1rem; }
 #feedback { background: var(--surface); }
 .feedback-wrapper { max-width: 560px; margin: 0 auto; }
 .feedback-form { display: flex; flex-direction: column; gap: 20px; }
+.feedback-form[hidden] { display: none; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
 .form-group label {
   font-size: 0.82rem; font-weight: 700;
@@ -661,9 +662,29 @@ h3 { font-size: 1.1rem; }
   text-align: center; padding: 60px 0;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
+.feedback-thanks[hidden] { display: none; }
 .thanks-icon { font-size: 3.5rem; }
 .feedback-thanks h3 { font-size: 1.6rem; color: var(--primary); }
 .feedback-thanks p { color: #555; font-size: 1rem; }
+.feedback-google-cta {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  width: 100%;
+}
+.feedback-google-cta p { font-size: 0.92rem; }
+.feedback-again-link {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: underline;
+}
 
 /* ══════════════════════════════════════
    FOOTER

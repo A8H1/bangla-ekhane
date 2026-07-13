@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bangla Ekhane — Authentic Bengali Cuisine, Bangalore</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
   <!-- SEO -->
   <meta name="description" content="Authentic Bengali cuisine at CSK Mall, Gunjur, Bangalore. Homely cooking, dine-in & takeaway, traditional recipes. Open for Lunch & Dinner." />
 
@@ -487,6 +493,7 @@
               name="feedback" method="POST" data-netlify="true"
               netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="feedback" />
+          <input type="hidden" name="priority" id="fb-priority" value="" />
           <p hidden><input name="bot-field" /></p>
           <div class="form-group">
             <label for="fb-name">Your Name</label>
@@ -510,6 +517,23 @@
           </div>
           <button type="submit" class="btn btn-primary">Send Feedback</button>
         </form>
+        <div class="feedback-thanks" id="feedback-thanks" hidden>
+          <div class="thanks-icon">🙏</div>
+          <h3>ধন্যবাদ! Thank you!</h3>
+          <p>Your feedback means the world to us.</p>
+          <div class="feedback-google-cta">
+            <p>Got a minute? A Google review helps other Bengali food lovers find us.</p>
+            <a href="https://local.google.com/place?placeid=ChIJVfRMATcTrjsRJJ9s4xr7TCk&utm_medium=noren&utm_source=gbp&utm_campaign=2026"
+               class="btn btn-primary" target="_blank" rel="noopener">
+              Rate Us on Google
+            </a>
+            <a href="https://local.google.com/place?placeid=ChIJVfRMATcTrjsRJJ9s4xr7TCk&utm_medium=noren&utm_source=gbp&utm_campaign=2026"
+               target="_blank" rel="noopener" aria-label="Scan to rate Bangla Ekhane on Google">
+              <img src="assets/images/google-review-qr.png" alt="Google QR code to rate Bangla Ekhane" class="google-review-qr" loading="lazy" />
+            </a>
+          </div>
+          <a href="#feedback" id="feedback-again" class="feedback-again-link">Submit another response</a>
+        </div>
       </div>
     </div>
   </section>
