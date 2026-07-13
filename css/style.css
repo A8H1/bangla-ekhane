@@ -343,10 +343,62 @@ h3 { font-size: 1.1rem; }
 .tab-btn.active,
 .tab-btn:hover { background: var(--primary); color: var(--white); }
 .tab-panel[hidden] { display: none; }
+.fish-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 2px 2px 14px;
+  margin-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.fish-chip {
+  flex-shrink: 0;
+  padding: 6px 16px;
+  border: 1.5px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.fish-chip.active,
+.fish-chip:hover { background: var(--accent); color: var(--white); }
+.fish-hide { display: none !important; }
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 14px;
+}
+.menu-group-label {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 2px;
+}
+.menu-group-label:first-child { margin-top: 0; }
+.menu-group-label span {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.menu-group-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--accent), transparent);
+  opacity: 0.4;
 }
 .menu-card {
   background: var(--surface);
@@ -357,6 +409,7 @@ h3 { font-size: 1.1rem; }
   align-items: flex-start;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s, transform 0.2s;
+  border-left: 3px solid var(--fish-color, transparent);
 }
 .menu-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .menu-card > div {
@@ -375,6 +428,35 @@ h3 { font-size: 1.1rem; }
 .menu-card h3 small { font-weight: 400; color: #888; font-size: 0.78rem; }
 .menu-price { grid-area: price; font-size: 0.92rem; font-weight: 700; color: var(--accent); white-space: nowrap; text-align: right; }
 .menu-bengali { grid-area: bengali; font-family: var(--font-heading); font-size: 0.82rem; color: #888; line-height: 1.4; }
+
+/* Fish-type accent colors */
+.fish-katla   { --fish-color: #8B2500; }
+.fish-rohu    { --fish-color: #b5651d; }
+.fish-hilsa   { --fish-color: #C8910A; }
+.fish-pabda   { --fish-color: #6b8e23; }
+.fish-lote    { --fish-color: #8a6d3b; }
+.fish-prawn   { --fish-color: #a63a50; }
+.fish-koi     { --fish-color: #3f6b4a; }
+.fish-mourola { --fish-color: #b08d57; }
+.fish-bhetki  { --fish-color: #4a5a8a; }
+.menu-group-label.fish-katla   span { color: #8B2500; }
+.menu-group-label.fish-rohu    span { color: #b5651d; }
+.menu-group-label.fish-hilsa   span { color: #C8910A; }
+.menu-group-label.fish-pabda   span { color: #6b8e23; }
+.menu-group-label.fish-lote    span { color: #8a6d3b; }
+.menu-group-label.fish-prawn   span { color: #a63a50; }
+.menu-group-label.fish-koi     span { color: #3f6b4a; }
+.menu-group-label.fish-mourola span { color: #b08d57; }
+.menu-group-label.fish-bhetki  span { color: #4a5a8a; }
+.menu-group-label.fish-katla::after   { background: linear-gradient(to right, #8B2500, transparent); }
+.menu-group-label.fish-rohu::after    { background: linear-gradient(to right, #b5651d, transparent); }
+.menu-group-label.fish-hilsa::after   { background: linear-gradient(to right, #C8910A, transparent); }
+.menu-group-label.fish-pabda::after   { background: linear-gradient(to right, #6b8e23, transparent); }
+.menu-group-label.fish-lote::after    { background: linear-gradient(to right, #8a6d3b, transparent); }
+.menu-group-label.fish-prawn::after   { background: linear-gradient(to right, #a63a50, transparent); }
+.menu-group-label.fish-koi::after     { background: linear-gradient(to right, #3f6b4a, transparent); }
+.menu-group-label.fish-mourola::after { background: linear-gradient(to right, #b08d57, transparent); }
+.menu-group-label.fish-bhetki::after  { background: linear-gradient(to right, #4a5a8a, transparent); }
 .menu-download {
   text-align: center;
   margin-top: 52px;
