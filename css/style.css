@@ -771,6 +771,14 @@ h3 { font-size: 1.1rem; }
 }
 
 /* ══════════════════════════════════════
+   FLOATING ORDER BUTTONS (shared width so the stack lines up)
+   ══════════════════════════════════════ */
+#whatsapp-float, #swiggy-float, #district-float {
+  min-width: 188px;
+  justify-content: center;
+}
+
+/* ══════════════════════════════════════
    FLOATING WHATSAPP
    ══════════════════════════════════════ */
 #whatsapp-float {
@@ -965,6 +973,7 @@ h3 { font-size: 1.1rem; }
   .cd-block { padding: 10px 12px; min-width: 62px; }
   .cd-block span { font-size: 1.6rem; }
   .cd-sep { font-size: 1.5rem; }
+  #whatsapp-float, #swiggy-float, #district-float { min-width: 0; }
   #whatsapp-float span { display: none; }
   #whatsapp-float { padding: 15px; border-radius: 50%; bottom: 20px; right: 16px; }
   #swiggy-float span { display: none; }
