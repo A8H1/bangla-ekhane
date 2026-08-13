@@ -466,6 +466,62 @@ h3 { font-size: 1.1rem; }
 .menu-download p { color: #666; font-size: 0.9rem; }
 
 /* ══════════════════════════════════════
+   CATERING
+   ══════════════════════════════════════ */
+#catering { background: var(--surface); }
+.catering-inner { text-align: center; padding-top: 64px; padding-bottom: 72px; }
+.catering-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 auto 18px;
+  padding: 9px 20px 9px 16px;
+  border-radius: 50px;
+  background: linear-gradient(100deg, var(--primary), var(--accent), var(--primary));
+  background-size: 220% 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 20px rgba(139,37,0,0.3);
+  animation: catering-sheen 3.5s ease-in-out infinite;
+}
+.catering-eyebrow .live-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #fff; flex: none;
+  animation: catering-pulse 1.6s ease-in-out infinite;
+}
+@keyframes catering-sheen {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes catering-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
+  50%      { opacity: 0.6; box-shadow: 0 0 0 5px rgba(255,255,255,0); }
+}
+.catering-copy {
+  max-width: 560px;
+  margin: 0 auto 32px;
+  font-size: 1.02rem;
+  color: #4a4a4a;
+}
+.catering-call-btn {
+  font-size: 1.15rem !important;
+  padding: 18px 44px !important;
+  box-shadow: 0 8px 28px rgba(139,37,0,0.35);
+}
+.catering-phone {
+  margin-top: 14px;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+/* ══════════════════════════════════════
    ABOUT
    ══════════════════════════════════════ */
 #about { padding: 0; }
