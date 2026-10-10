@@ -1,6 +1,14 @@
 const navbar    = document.getElementById('navbar');
 const hamburger = document.getElementById('nav-hamburger');
 const navLinks  = document.getElementById('nav-links');
+const announcementBar = document.querySelector('.announcement-bar');
+
+function setAnnouncementHeight() {
+  if (!announcementBar) return;
+  document.documentElement.style.setProperty('--announcement-h', announcementBar.offsetHeight + 'px');
+}
+setAnnouncementHeight();
+window.addEventListener('resize', setAnnouncementHeight);
 
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 10);

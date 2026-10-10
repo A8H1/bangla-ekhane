@@ -10,7 +10,7 @@
   --text:     #1C1C1C;
   --surface:  #FFF8EE;
   --white:    #ffffff;
-  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Playfair Display', 'Noto Sans Bengali', Georgia, serif;
   --font-body:    'Lato', sans-serif;
   --max-w:    1100px;
   --radius:   8px;
@@ -106,10 +106,76 @@ h3 { font-size: 1.1rem; }
 .badge-nonveg { color: #c0392b; }
 
 /* ══════════════════════════════════════
+   ANNOUNCEMENT BAR
+   ══════════════════════════════════════ */
+.announcement-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: linear-gradient(100deg, var(--primary), var(--accent), var(--primary));
+  background-size: 220% 100%;
+  animation: catering-sheen 5s ease-in-out infinite;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+}
+.announcement-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  padding-right: 14px;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.6px;
+}
+.announcement-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #fff; flex: none;
+  animation: catering-pulse 1.6s ease-in-out infinite;
+}
+.announcement-track-wrap {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+}
+.announcement-track {
+  display: flex;
+  width: max-content;
+  animation: announcement-scroll 26s linear infinite;
+}
+.announcement-bar:hover .announcement-track,
+.announcement-bar:focus-within .announcement-track {
+  animation-play-state: paused;
+}
+.announcement-group {
+  white-space: nowrap;
+  font-weight: 600;
+}
+.announcement-group strong { font-weight: 800; }
+@keyframes announcement-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track { animation: none; }
+  .announcement-group[aria-hidden="true"] { display: none; }
+}
+
+/* ══════════════════════════════════════
    NAVBAR
    ══════════════════════════════════════ */
 #navbar {
-  position: sticky; top: 0;
+  position: sticky; top: var(--announcement-h, 0px);
   background: var(--surface);
   z-index: 100;
   transition: box-shadow 0.3s;
@@ -520,6 +586,53 @@ h3 { font-size: 1.1rem; }
   font-weight: 700;
   color: var(--primary);
   letter-spacing: 0.5px;
+}
+
+/* ══════════════════════════════════════
+   EVENTS
+   ══════════════════════════════════════ */
+#events { background: var(--surface); }
+.events-inner { text-align: center; padding-top: 64px; padding-bottom: 56px; }
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 8px;
+  text-align: left;
+}
+.event-card {
+  background: var(--bg);
+  border: 1px solid rgba(139,37,0,0.12);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.event-card h3 { color: var(--primary); min-height: 2.6rem; }
+.event-area { color: #6b6b6b; font-size: 0.9rem; }
+.event-dates {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--accent);
+  font-size: 1.05rem;
+  margin: 6px 0 14px;
+}
+.event-map-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 0.88rem !important;
+  padding: 10px 20px !important;
+}
+.events-restaurant-note {
+  margin-top: 36px;
+  padding: 16px 20px;
+  background: var(--bg);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  color: var(--text);
 }
 
 /* ══════════════════════════════════════
@@ -1011,10 +1124,12 @@ h3 { font-size: 1.1rem; }
   .nav-links.open { display: flex; }
   .section-inner { padding: 56px 16px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .events-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (max-width: 480px) {
+  .announcement-bar { font-size: 0.75rem; padding: 8px 12px; }
   .cd-block { padding: 10px 12px; min-width: 62px; }
   .cd-block span { font-size: 1.6rem; }
   .cd-sep { font-size: 1.5rem; }
