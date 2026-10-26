@@ -610,7 +610,20 @@ h3 { font-size: 1.1rem; }
   flex-direction: column;
   gap: 4px;
 }
-.event-card h3 { color: var(--primary); min-height: 2.6rem; }
+.event-card h3 { color: var(--primary); }
+.event-coming-soon {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 14px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: fit-content;
+}
 .event-area { color: #6b6b6b; font-size: 0.9rem; }
 .event-dates {
   font-family: var(--font-heading);
