@@ -892,7 +892,7 @@ h3 { font-size: 1.1rem; }
 /* ══════════════════════════════════════
    FLOATING ORDER BUTTONS (shared width so the stack lines up)
    ══════════════════════════════════════ */
-#whatsapp-float, #swiggy-float, #zomato-float, #district-float {
+#whatsapp-float, #swiggy-float, #zomato-float, #district-float, #ownly-float {
   min-width: 150px;
   justify-content: center;
 }
@@ -1008,6 +1008,35 @@ h3 { font-size: 1.1rem; }
 }
 
 /* ══════════════════════════════════════
+   FLOATING OWNLY
+   ══════════════════════════════════════ */
+#ownly-float {
+  position: fixed;
+  bottom: 238px; right: 24px;
+  background: #FF297D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.76rem;
+  box-shadow: 0 4px 20px rgba(255,41,125,0.5);
+  z-index: 999;
+  animation: ow-bounce 3s ease-in-out infinite;
+  animation-delay: 3s;
+  text-decoration: none;
+}
+#ownly-float:hover { box-shadow: 0 6px 28px rgba(255,41,125,0.7); }
+#ownly-float .ownly-mark { display: block; width: 19px; height: 19px; overflow: hidden; flex: none; }
+#ownly-float .ownly-mark img { display: block; height: 19px; width: auto; max-width: none; filter: brightness(0) invert(1); }
+@keyframes ow-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+/* ══════════════════════════════════════
    LIGHTBOX
    ══════════════════════════════════════ */
 #lightbox {
@@ -1079,7 +1108,7 @@ h3 { font-size: 1.1rem; }
   .cd-block { padding: 10px 12px; min-width: 62px; }
   .cd-block span { font-size: 1.6rem; }
   .cd-sep { font-size: 1.5rem; }
-  #whatsapp-float, #swiggy-float, #zomato-float, #district-float { min-width: 0; }
+  #whatsapp-float, #swiggy-float, #zomato-float, #district-float, #ownly-float { min-width: 0; }
   #whatsapp-float span { display: none; }
   #whatsapp-float { padding: 12px; border-radius: 50%; bottom: 16px; right: 16px; }
   #swiggy-float span { display: none; }
@@ -1088,6 +1117,8 @@ h3 { font-size: 1.1rem; }
   #zomato-float { padding: 12px; border-radius: 50%; bottom: 112px; right: 16px; }
   #district-float span { display: none; }
   #district-float { padding: 12px; border-radius: 50%; bottom: 160px; right: 16px; }
+  #ownly-float .ownly-label { display: none; }
+  #ownly-float { padding: 12px; border-radius: 50%; bottom: 208px; right: 16px; }
   .gallery-grid { grid-template-columns: 1fr; }
   #lb-prev { left: 4px; }
   #lb-next { right: 4px; }
