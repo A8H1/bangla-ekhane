@@ -29,3 +29,12 @@ document.getElementById('whatsapp-float')?.addEventListener('click', () => {
 document.getElementById('menu-pdf-link')?.addEventListener('click', () => {
   gtag?.('event', 'menu_pdf_download', { event_category: 'engagement' });
 });
+
+// Drop the "Upcoming" badge once a pop-up's date has passed.
+document.querySelectorAll('.timeline-item.is-upcoming[data-event-date]').forEach(el => {
+  const end = new Date(el.dataset.eventDate + 'T23:59:59+05:30');
+  if (Date.now() > end) {
+    el.classList.remove('is-upcoming');
+    el.querySelector('.timeline-badge')?.remove();
+  }
+});
