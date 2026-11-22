@@ -1,0 +1,952 @@
+{
+  "_readme": "Single source of truth for the Bangla Ekhane menu. Edit dishes/prices here, then run: python3 menu/build_menu.py  (regenerates the menu PDF and the website menu tabs).",
+  "pdf_pages": [
+    {
+      "page": 1,
+      "cover": true,
+      "sections": [
+        "starters"
+      ]
+    },
+    {
+      "page": 2,
+      "sections": [
+        "snacks",
+        "biriyani"
+      ]
+    },
+    {
+      "page": 3,
+      "sections": [
+        "roti-rice",
+        "dal",
+        "veg",
+        "thali"
+      ]
+    },
+    {
+      "page": 4,
+      "insert": "assets/thali-guide-page.pdf"
+    },
+    {
+      "page": 5,
+      "sections": [
+        "fish",
+        "chicken",
+        "mutton",
+        "sweets",
+        "chatni-tea"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "starters",
+      "bn": "প্রারম্ভিক ভোজন",
+      "en": "Starters",
+      "label": "STARTERS",
+      "items": [
+        {
+          "name": "Aloo Chop",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 79,
+          "bn": "আলুর চপ"
+        },
+        {
+          "name": "Begun Bhaja",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 79,
+          "bn": "বেগুন ভাজা"
+        },
+        {
+          "name": "Beguni",
+          "qty": "Plate",
+          "veg": true,
+          "price": 79,
+          "bn": "বেগুনি"
+        },
+        {
+          "name": "Vegetable Chop",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 149,
+          "bn": "ভেজিটেবল চপ"
+        },
+        {
+          "name": "Vegetable Cutlet",
+          "qty": "1 pc",
+          "veg": true,
+          "price": 99,
+          "bn": "ভেজিটেবল কাটলেট"
+        },
+        {
+          "name": "Mochar Chop",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 149,
+          "bn": "মোচার চপ"
+        },
+        {
+          "name": "Postor (Khas Khas) Bora",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 349,
+          "bn": "পোস্তর বড়া"
+        },
+        {
+          "name": "Jhuri Aloo Bhaja",
+          "qty": "Plate",
+          "veg": true,
+          "price": 119,
+          "bn": "ঝুড়ি আলু ভাজা"
+        },
+        {
+          "name": "Peyaji",
+          "qty": "Plate",
+          "veg": false,
+          "price": 79,
+          "bn": "পেঁয়াজি"
+        },
+        {
+          "name": "Egg Devil",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 149,
+          "bn": "ডিমের ডেভিল"
+        },
+        {
+          "name": "Egg Prawn Devil",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 148,
+          "bn": "ডিম চিংড়ির ডেভিল"
+        },
+        {
+          "name": "Prawn Chop",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 96,
+          "bn": "চিংড়ির চপ"
+        },
+        {
+          "name": "Prawn Cutlet",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 121,
+          "bn": "চিংড়ির কাটলেট"
+        },
+        {
+          "name": "Fish Cutlet",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 199,
+          "bn": "মাছের কাটলেট"
+        },
+        {
+          "name": "Fish Finger",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 199,
+          "bn": "ফিশ ফিঙ্গার"
+        },
+        {
+          "name": "Bhetki Machher Kabiraji",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 349,
+          "bn": "ভেটকি মাছের কবিরাজি"
+        },
+        {
+          "name": "Chicken Pakoda",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 99,
+          "bn": "মোরগ পকোড়া"
+        },
+        {
+          "name": "Chicken Chop",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 179,
+          "bn": "মোরগ চপ"
+        },
+        {
+          "name": "Chicken Cutlet",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 167,
+          "bn": "মোরগ কাটলেট"
+        },
+        {
+          "name": "Chicken Kabiraji",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 215,
+          "bn": "মোরগ কবিরাজি"
+        },
+        {
+          "name": "Mutton Cutlet",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 219,
+          "bn": "মাটন কাটলেট"
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "bn": "জলখাবার",
+      "en": "Snacks",
+      "label": "SNACKS",
+      "items": [
+        {
+          "name": "Samosa",
+          "qty": "1 pc",
+          "veg": true,
+          "price": 45,
+          "bn": "সিঙাড়া"
+        },
+        {
+          "name": "Luchi and Aloo Dam",
+          "qty": "3 pcs",
+          "veg": true,
+          "price": 149,
+          "bn": "লুচি ও আলুর দম"
+        },
+        {
+          "name": "Peas Kachori and Aloo Dam",
+          "qty": "3 pcs",
+          "veg": true,
+          "price": 159,
+          "bn": "কড়াইশুঁটির কচুরি ও আলুর দম"
+        },
+        {
+          "name": "Heeng Kachori and Aloo Dam",
+          "qty": "3 pcs",
+          "veg": true,
+          "bn": "হিং কচুরি ও আলুর দম",
+          "price": 154
+        },
+        {
+          "name": "Aloo Roll",
+          "qty": "",
+          "veg": true,
+          "price": 79,
+          "bn": "আলু রোল"
+        },
+        {
+          "name": "Veg Chowmein",
+          "qty": "",
+          "veg": true,
+          "price": 124,
+          "bn": "ভেজ চাওমিন"
+        },
+        {
+          "name": "Luchi and Chicken Kosha",
+          "qty": "3 pcs",
+          "veg": false,
+          "price": 249,
+          "bn": "লুচি ও মোরগ কষা"
+        },
+        {
+          "name": "Luchi and Mutton Kosha",
+          "qty": "3+3 pcs",
+          "veg": false,
+          "bn": "লুচি ও মাটন কষা",
+          "price": 374
+        },
+        {
+          "name": "Peas Kachori and Chicken Kosha",
+          "qty": "3 pcs",
+          "veg": false,
+          "price": 259,
+          "bn": "কড়াইশুঁটির কচুরি ও মোরগ কষা"
+        },
+        {
+          "name": "Peas Kachori and Mutton Kosha",
+          "qty": "3+3 pcs",
+          "veg": false,
+          "bn": "কড়াইশুঁটির কচুরি ও মাটন কষা",
+          "price": 384
+        },
+        {
+          "name": "Heeng Kachori and Chicken Kosha",
+          "qty": "3+3 pcs",
+          "veg": false,
+          "bn": "হিং কচুরি ও মোরগ কষা",
+          "price": 254
+        },
+        {
+          "name": "Heeng Kachori and Mutton Kosha",
+          "qty": "3+3 pcs",
+          "veg": false,
+          "bn": "হিং কচুরি ও মাটন কষা",
+          "price": 379
+        },
+        {
+          "name": "Egg Roll",
+          "qty": "",
+          "veg": false,
+          "price": 99,
+          "bn": "এগ রোল"
+        },
+        {
+          "name": "Double Egg Roll",
+          "qty": "",
+          "veg": false,
+          "price": 119,
+          "bn": "ডবল এগ রোল"
+        },
+        {
+          "name": "Chicken Roll",
+          "qty": "",
+          "veg": false,
+          "price": 129,
+          "bn": "চিকেন রোল"
+        },
+        {
+          "name": "Egg Chicken Roll",
+          "qty": "",
+          "veg": false,
+          "price": 139,
+          "bn": "এগ চিকেন রোল"
+        },
+        {
+          "name": "Double Egg Chicken Roll",
+          "qty": "",
+          "veg": false,
+          "price": 149,
+          "bn": "ডবল এগ চিকেন রোল"
+        },
+        {
+          "name": "Mutton Roll",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 187,
+          "bn": "মাটন রোল"
+        },
+        {
+          "name": "Egg Moghlai Parota",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 249,
+          "bn": "ডিম মোঘলাই পরোটা"
+        },
+        {
+          "name": "Chicken Moghlai Parota",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 299,
+          "bn": "মোরগ মোঘলাই পরোটা"
+        },
+        {
+          "name": "Mutton Moghlai Parota",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 399,
+          "bn": "মাটন মোঘলাই পরোটা"
+        },
+        {
+          "name": "Egg Chowmein",
+          "qty": "",
+          "veg": false,
+          "price": 138,
+          "bn": "এগ চাওমিন"
+        },
+        {
+          "name": "Chicken Chowmein",
+          "qty": "",
+          "veg": false,
+          "bn": "চিকেন চাওমিন",
+          "price": 187
+        },
+        {
+          "name": "Egg Chicken Chowmein",
+          "qty": "",
+          "veg": false,
+          "bn": "এগ চিকেন চাওমিন",
+          "price": 204
+        },
+        {
+          "name": "Prawn Chowmein",
+          "qty": "",
+          "veg": false,
+          "price": 224,
+          "bn": "চিংড়ি চাওমিন"
+        }
+      ]
+    },
+    {
+      "id": "biriyani",
+      "bn": "বিরিয়ানি",
+      "en": "Biriyani",
+      "label": "BIRIYANI",
+      "items": [
+        {
+          "name": "Kolkata Chicken (Standard)",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 349,
+          "bn": "কলকাতা মোরগ বিরিয়ানি"
+        },
+        {
+          "name": "Kolkata Chicken + Extra Rice",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 379,
+          "bn": "কলকাতা মোরগ বিরিয়ানি + অতিরিক্ত বিরিয়ানি"
+        },
+        {
+          "name": "Kolkata Chicken (Family)",
+          "qty": "3 pcs",
+          "veg": false,
+          "price": 649,
+          "bn": "কলকাতা মোরগ বিরিয়ানি (পরিবার)"
+        },
+        {
+          "name": "Kolkata Mutton (Standard)",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 549,
+          "bn": "কলকাতা মাটন বিরিয়ানি"
+        },
+        {
+          "name": "Kolkata Mutton + Extra Rice",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 579,
+          "bn": "কলকাতা মাটন বিরিয়ানি + অতিরিক্ত বিরিয়ানি"
+        },
+        {
+          "name": "Kolkata Mutton (Family)",
+          "qty": "3 pcs",
+          "veg": false,
+          "price": 899,
+          "bn": "কলকাতা মাটন বিরিয়ানি (পরিবার)"
+        }
+      ]
+    },
+    {
+      "id": "roti-rice",
+      "bn": "রুটি ও ভাত",
+      "en": "Roti & Rice",
+      "label": "ROTI & RICE",
+      "items": [
+        {
+          "name": "Roti (Phulka)",
+          "qty": "1 pc",
+          "veg": true,
+          "price": 15,
+          "bn": "রুটি (ফুলকা)"
+        },
+        {
+          "name": "Ghoroya Sada Parota",
+          "qty": "2 pcs",
+          "veg": true,
+          "price": 49,
+          "bn": "ঘরোয়া সাদা পরোটা"
+        },
+        {
+          "name": "Peas Kochuri",
+          "qty": "3 pcs",
+          "veg": true,
+          "price": 99,
+          "bn": "কড়াইশুঁটির কচুরি"
+        },
+        {
+          "name": "Sada Bhat",
+          "qty": "",
+          "veg": true,
+          "price": 79,
+          "bn": "সাদা ভাত"
+        },
+        {
+          "name": "Ghee Bhat",
+          "qty": "",
+          "veg": true,
+          "price": 89,
+          "bn": "ঘি ভাত"
+        },
+        {
+          "name": "Basanti Polao",
+          "qty": "",
+          "veg": true,
+          "price": 199,
+          "bn": "বাসন্তী পোলাও"
+        }
+      ]
+    },
+    {
+      "id": "dal",
+      "bn": "ডাল",
+      "en": "Dal",
+      "label": "DAL",
+      "items": [
+        {
+          "name": "Moosur Dal",
+          "qty": "",
+          "veg": true,
+          "price": 79,
+          "bn": "মুসুর ডাল"
+        },
+        {
+          "name": "Narkel diye Chholar Dal",
+          "qty": "",
+          "veg": true,
+          "price": 109,
+          "bn": "নারকেল দিয়ে ছোলার ডাল"
+        },
+        {
+          "name": "Moong Dal",
+          "qty": "",
+          "veg": true,
+          "price": 119,
+          "bn": "মুগ ডাল"
+        },
+        {
+          "name": "Arohar Dal",
+          "qty": "",
+          "veg": true,
+          "price": 129,
+          "bn": "অড়হর ডাল"
+        }
+      ]
+    },
+    {
+      "id": "veg",
+      "bn": "নিরামিষ",
+      "en": "Veg",
+      "label": "VEG",
+      "items": [
+        {
+          "name": "Kalo Jeere Aloo Bhaja",
+          "qty": "",
+          "veg": true,
+          "price": 99,
+          "bn": "কালো জিরে আলু ভাজা"
+        },
+        {
+          "name": "Aloo Begun Bori Torkari",
+          "qty": "",
+          "veg": true,
+          "price": 219,
+          "bn": "আলু বেগুন বড়ির তরকারি"
+        },
+        {
+          "name": "Aloo Phulkopir Jhol",
+          "qty": "",
+          "veg": true,
+          "price": 239,
+          "bn": "আলু ফুলকপির ঝোল"
+        },
+        {
+          "name": "Aloo Dom",
+          "qty": "",
+          "veg": true,
+          "price": 249,
+          "bn": "আলুর দম"
+        },
+        {
+          "name": "Aloo Potoler Jhol",
+          "qty": "",
+          "veg": true,
+          "price": 249,
+          "bn": "আলু পটলের ঝোল"
+        },
+        {
+          "name": "Aloo Posto (Khas Khas)",
+          "qty": "",
+          "veg": true,
+          "price": 299,
+          "bn": "আলু পোস্ত"
+        },
+        {
+          "name": "Potol Dorma",
+          "qty": "",
+          "veg": true,
+          "price": 299,
+          "bn": "পটলের দোরমা"
+        },
+        {
+          "name": "Kanchkolar Kofta",
+          "qty": "",
+          "veg": true,
+          "price": 299,
+          "bn": "কাঁচকলার কোফতা"
+        },
+        {
+          "name": "Panch Torkari",
+          "qty": "",
+          "veg": true,
+          "price": 299,
+          "bn": "পাঁচ তরকারি"
+        },
+        {
+          "name": "Mochar Ghonto",
+          "qty": "",
+          "veg": true,
+          "price": 319,
+          "bn": "মোচার ঘন্ট"
+        },
+        {
+          "name": "Naboratno Kari",
+          "qty": "",
+          "veg": true,
+          "price": 319,
+          "bn": "নবরত্ন কারি"
+        },
+        {
+          "name": "Dhoka Dalna",
+          "qty": "",
+          "veg": true,
+          "price": 349,
+          "bn": "ধোঁকার ডালনা"
+        },
+        {
+          "name": "Shukto",
+          "qty": "",
+          "veg": true,
+          "price": 389,
+          "bn": "শুক্তো"
+        }
+      ]
+    },
+    {
+      "id": "thali",
+      "bn": "থালি",
+      "en": "Thali",
+      "label": "THALI",
+      "items": [
+        {
+          "name": "Economic Thali",
+          "qty": "Bhat · Dal · Bhaja",
+          "veg": true,
+          "price": 119,
+          "bn": "ভাত-ডাল-ভাজা"
+        },
+        {
+          "name": "Veg Thali",
+          "qty": "",
+          "veg": true,
+          "price": 299,
+          "bn": "নিরামিষ থালি"
+        },
+        {
+          "name": "Executive Veg Thali",
+          "qty": "",
+          "veg": true,
+          "price": 499,
+          "bn": "রাজকীয় নিরামিষ থালি"
+        },
+        {
+          "name": "Rohu Thali",
+          "qty": "1 pc fish",
+          "veg": false,
+          "price": 349,
+          "bn": "রুই থালি"
+        },
+        {
+          "name": "Katla Thali",
+          "qty": "1 pc fish",
+          "veg": false,
+          "price": 384,
+          "bn": "কাতলা থালি"
+        },
+        {
+          "name": "Chicken Thali",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 449,
+          "bn": "মোরগ থালি"
+        },
+        {
+          "name": "Mutton Thali",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 549,
+          "bn": "মাটন থালি"
+        },
+        {
+          "name": "Prawn Malaikari Thali",
+          "qty": "",
+          "veg": false,
+          "price": 549,
+          "bn": "চিংড়ির মালাইকারী থালি"
+        },
+        {
+          "name": "Pabda Thali",
+          "qty": "1 pc fish",
+          "veg": false,
+          "price": 649,
+          "bn": "পাবদা থালি"
+        },
+        {
+          "name": "Ilish Thali",
+          "qty": "1 pc fish",
+          "veg": false,
+          "price": 749,
+          "bn": "ইলিশ থালি"
+        },
+        {
+          "name": "Executive Non-Veg Thali",
+          "qty": "",
+          "veg": false,
+          "price": 849,
+          "bn": "রাজকীয় আমিষ থালি"
+        }
+      ]
+    },
+    {
+      "id": "fish",
+      "bn": "মাছ",
+      "en": "Fish",
+      "label": "FISH",
+      "items": [
+        {
+          "name": "Doi Rui",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 234,
+          "bn": "দই রুই",
+          "group": "rohu"
+        },
+        {
+          "name": "Rui Kaliya",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 234,
+          "bn": "রুই কালিয়া",
+          "group": "rohu"
+        },
+        {
+          "name": "Phulkopi diye Machher Jhol (Rui)",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 199,
+          "bn": "ফুলকপি দিয়ে মাছের ঝোল (রুই)",
+          "group": "rohu"
+        },
+        {
+          "name": "Doi Katla",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 284,
+          "bn": "দই কাতলা",
+          "group": "katla"
+        },
+        {
+          "name": "Katla Kaliya",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 284,
+          "bn": "কাতলা কালিয়া",
+          "group": "katla"
+        },
+        {
+          "name": "Phulkopi diye Machher Jhol (Katla)",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 219,
+          "bn": "ফুলকপি দিয়ে মাছের ঝোল (কাতলা)",
+          "group": "katla"
+        },
+        {
+          "name": "Ilish Paturi",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 464,
+          "bn": "ইলিশ পাতুরি",
+          "group": "hilsa"
+        },
+        {
+          "name": "Ilish Bhapa",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 599,
+          "bn": "ইলিশ ভাপা",
+          "group": "hilsa"
+        },
+        {
+          "name": "Sorshe Ilish",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 599,
+          "bn": "সরষে ইলিশ",
+          "group": "hilsa"
+        },
+        {
+          "name": "Sorshe Pabda",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 599,
+          "bn": "সর্ষে পাবদা",
+          "group": "pabda"
+        },
+        {
+          "name": "Bhetki Paturi",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 349,
+          "bn": "ভেটকি পাতুরি",
+          "group": "bhetki"
+        },
+        {
+          "name": "Bhetki Bhapa",
+          "qty": "2 pcs",
+          "veg": false,
+          "price": 499,
+          "bn": "ভেটকি ভাপা",
+          "group": "bhetki"
+        },
+        {
+          "name": "Prawn Malaikari",
+          "qty": "4-6 pcs",
+          "veg": false,
+          "price": 449,
+          "bn": "চিংড়ির মালাইকারী",
+          "group": "prawn"
+        },
+        {
+          "name": "Prawn Sorshe Posto (Khas Khas)",
+          "qty": "4-6 pcs",
+          "veg": false,
+          "price": 399,
+          "bn": "চিংড়ির সর্ষে পোস্ত",
+          "group": "prawn"
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "bn": "মোরগের মাংস",
+      "en": "Chicken",
+      "label": "CHICKEN",
+      "items": [
+        {
+          "name": "Chicken Chaap",
+          "qty": "1 pc",
+          "veg": false,
+          "price": 349,
+          "bn": "মোরগের চাপ"
+        },
+        {
+          "name": "Chicken Kosha",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 349,
+          "bn": "মোরগ কষা"
+        },
+        {
+          "name": "Ghoroya Chickener Jhol",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 319,
+          "bn": "ঘরোয়া মোরগের ঝোল"
+        },
+        {
+          "name": "Kachalonka Chicken",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 319,
+          "bn": "কাঁচালঙ্কা মোরগ"
+        },
+        {
+          "name": "Golbari Chicken",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 399,
+          "bn": "গোলবাড়ি মোরগ"
+        },
+        {
+          "name": "Chicken Dakbanglow",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 424,
+          "bn": "মোরগ ডাকবাংলো"
+        }
+      ]
+    },
+    {
+      "id": "mutton",
+      "bn": "পাঁঠার মাংস",
+      "en": "Mutton",
+      "label": "MUTTON",
+      "items": [
+        {
+          "name": "Mutton Kosha",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 549,
+          "bn": "মাটন কষা"
+        },
+        {
+          "name": "Ghoroya Muttoner Jhol",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 499,
+          "bn": "ঘরোয়া মাটনের ঝোল"
+        },
+        {
+          "name": "Golbari Mutton",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 749,
+          "bn": "গোলবাড়ি মাটন"
+        },
+        {
+          "name": "Mutton Dakbanglow",
+          "qty": "4 pcs",
+          "veg": false,
+          "price": 784,
+          "bn": "মাটন ডাকবাংলো"
+        }
+      ]
+    },
+    {
+      "id": "sweets",
+      "bn": "মিষ্টি মুখ",
+      "en": "Sweets",
+      "label": "SWEETS",
+      "items": [
+        {
+          "name": "Nabadwip Mishti Doi",
+          "qty": "100 gm",
+          "veg": true,
+          "price": 99,
+          "bn": "নবদ্বীপের মিষ্টি দই"
+        },
+        {
+          "name": "Rosogolla",
+          "qty": "1 pc",
+          "veg": true,
+          "price": 45,
+          "bn": "রসগোল্লা"
+        }
+      ]
+    },
+    {
+      "id": "chatni-tea",
+      "bn": "চাটনি ও চা",
+      "en": "Chatni & Tea",
+      "label": "CHATNI & TEA",
+      "items": [
+        {
+          "name": "Tomato Chatni",
+          "qty": "",
+          "veg": true,
+          "price": 99,
+          "bn": "টমেটোর চাটনি"
+        },
+        {
+          "name": "Darjeeling Tea",
+          "qty": "",
+          "veg": true,
+          "price": 29,
+          "bn": "দার্জিলিং চা"
+        }
+      ]
+    }
+  ]
+}

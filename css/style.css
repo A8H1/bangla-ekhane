@@ -1145,3 +1145,6 @@ h3 { font-size: 1.1rem; }
   #lb-prev { left: 4px; }
   #lb-next { right: 4px; }
 }
+
+/* keep portion sizes like "(3 pcs)" on one line */
+.menu-card h3 small { white-space: nowrap; }

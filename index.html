@@ -41,7 +41,7 @@
   </script>
 
   <link rel="preload" as="image" href="assets/images/hero-bg-banner.jpg" fetchpriority="high" />
-  <link rel="stylesheet" href="css/style.css?v=202611181636" />
+  <link rel="stylesheet" href="css/style.css?v=202611221818" />
 </head>
 <body>
 
@@ -190,10 +190,11 @@
       <p class="section-subtitle">Cooked with love, the way Maa used to make it</p>
 
       <div class="menu-tabs" role="tablist">
-        <button class="tab-btn active" data-tab="starter" role="tab" aria-selected="true">প্রারম্ভিক ভোজন · Starters</button>
+        <!-- MENU-TABS:START -->
+        <button class="tab-btn active" data-tab="starters" role="tab" aria-selected="true">প্রারম্ভিক ভোজন · Starters</button>
         <button class="tab-btn" data-tab="snacks" role="tab" aria-selected="false">জলখাবার · Snacks</button>
         <button class="tab-btn" data-tab="biriyani" role="tab" aria-selected="false">বিরিয়ানি · Biriyani</button>
-        <button class="tab-btn" data-tab="roti" role="tab" aria-selected="false">রুটি ও ভাত · Roti &amp; Rice</button>
+        <button class="tab-btn" data-tab="roti-rice" role="tab" aria-selected="false">রুটি ও ভাত · Roti &amp; Rice</button>
         <button class="tab-btn" data-tab="dal" role="tab" aria-selected="false">ডাল · Dal</button>
         <button class="tab-btn" data-tab="veg" role="tab" aria-selected="false">নিরামিষ · Veg</button>
         <button class="tab-btn" data-tab="thali" role="tab" aria-selected="false">থালি · Thali</button>
@@ -201,82 +202,85 @@
         <button class="tab-btn" data-tab="chicken" role="tab" aria-selected="false">মোরগের মাংস · Chicken</button>
         <button class="tab-btn" data-tab="mutton" role="tab" aria-selected="false">পাঁঠার মাংস · Mutton</button>
         <button class="tab-btn" data-tab="sweets" role="tab" aria-selected="false">মিষ্টি মুখ · Sweets</button>
-        <button class="tab-btn" data-tab="chatni" role="tab" aria-selected="false">চাটনি ও চা · Chatni &amp; Tea</button>
+        <button class="tab-btn" data-tab="chatni-tea" role="tab" aria-selected="false">চাটনি ও চা · Chatni &amp; Tea</button>
+        <!-- MENU-TABS:END -->
       </div>
 
+      <!-- MENU-PANELS:START -->
       <!-- Starters -->
-      <div class="tab-panel" id="tab-starter">
+      <div class="tab-panel" id="tab-starters">
         <div class="menu-grid">
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Vegetable Chop <small>(2 pcs)</small></h3><p class="menu-bengali">ভেজিটেবল চপ</p><p class="menu-price">₹149</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Vegetable Cutlet <small>(1 pcs)</small></h3><p class="menu-bengali">ভেজিটেবল কাটলেট</p><p class="menu-price">₹99</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Chop <small>(2 pcs)</small></h3><p class="menu-bengali">আলুর চপ</p><p class="menu-price">₹79</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Mochar Chop <small>(2 pcs)</small></h3><p class="menu-bengali">মোচার চপ</p><p class="menu-price">₹149</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Begun Bhaja <small>(2 pcs)</small></h3><p class="menu-bengali">বেগুন ভাজা</p><p class="menu-price">₹79</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Beguni <small>(Plate)</small></h3><p class="menu-bengali">বেগুনি</p><p class="menu-price">₹79</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Vegetable Chop <small>(2 pcs)</small></h3><p class="menu-bengali">ভেজিটেবল চপ</p><p class="menu-price">₹149</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Vegetable Cutlet <small>(1 pc)</small></h3><p class="menu-bengali">ভেজিটেবল কাটলেট</p><p class="menu-price">₹99</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Mochar Chop <small>(2 pcs)</small></h3><p class="menu-bengali">মোচার চপ</p><p class="menu-price">₹149</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Postor (Khas Khas) Bora <small>(2 pcs)</small></h3><p class="menu-bengali">পোস্তর বড়া</p><p class="menu-price">₹349</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Samosa <small>(1 pcs)</small></h3><p class="menu-bengali">সিঙাড়া</p><p class="menu-price">₹45</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Jhuri Aloo Bhaja <small>(Plate)</small></h3><p class="menu-bengali">ঝুড়ি আলু ভাজা</p><p class="menu-price">₹119</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Peyaji <small>(Plate)</small></h3><p class="menu-bengali">পেঁয়াজি</p><p class="menu-price">₹79</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Devil <small>(2 pcs)</small></h3><p class="menu-bengali">ডিমের ডেভিল</p><p class="menu-price">₹149</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Prawn Devil <small>(1 pcs)</small></h3><p class="menu-bengali">ডিম চিংড়ির ডেভিল</p><p class="menu-price">₹148</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Chop <small>(1 pcs)</small></h3><p class="menu-bengali">চিংড়ির চপ</p><p class="menu-price">₹96</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Cutlet <small>(1 pcs)</small></h3><p class="menu-bengali">চিংড়ির কাটলেট</p><p class="menu-price">₹121</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Fish Cutlet <small>(1 pcs)</small></h3><p class="menu-bengali">মাছের কাটলেট</p><p class="menu-price">₹199</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Prawn Devil <small>(1 pc)</small></h3><p class="menu-bengali">ডিম চিংড়ির ডেভিল</p><p class="menu-price">₹148</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Chop <small>(1 pc)</small></h3><p class="menu-bengali">চিংড়ির চপ</p><p class="menu-price">₹96</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Cutlet <small>(1 pc)</small></h3><p class="menu-bengali">চিংড়ির কাটলেট</p><p class="menu-price">₹121</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Fish Cutlet <small>(1 pc)</small></h3><p class="menu-bengali">মাছের কাটলেট</p><p class="menu-price">₹199</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Fish Finger <small>(2 pcs)</small></h3><p class="menu-bengali">ফিশ ফিঙ্গার</p><p class="menu-price">₹199</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Bhetki Machher Kabiraji <small>(1 pcs)</small></h3><p class="menu-bengali">ভেটকি মাছের কবিরাজি</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Bhetki Machher Kabiraji <small>(1 pc)</small></h3><p class="menu-bengali">ভেটকি মাছের কবিরাজি</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Pakoda <small>(1 pc)</small></h3><p class="menu-bengali">মোরগ পকোড়া</p><p class="menu-price">₹99</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Chop <small>(2 pcs)</small></h3><p class="menu-bengali">মোরগ চপ</p><p class="menu-price">₹179</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Cutlet <small>(1 pcs)</small></h3><p class="menu-bengali">মোরগ কাটলেট</p><p class="menu-price">₹167</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Pakoda <small>(1 pcs)</small></h3><p class="menu-bengali">মোরগ পকোড়া</p><p class="menu-price">₹99</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Kabiraji <small>(1 pcs)</small></h3><p class="menu-bengali">মোরগ কবিরাজি</p><p class="menu-price">₹215</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Cutlet <small>(1 pcs)</small></h3><p class="menu-bengali">মাটন কাটলেট</p><p class="menu-price">₹219</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Cutlet <small>(1 pc)</small></h3><p class="menu-bengali">মোরগ কাটলেট</p><p class="menu-price">₹167</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Kabiraji <small>(1 pc)</small></h3><p class="menu-bengali">মোরগ কবিরাজি</p><p class="menu-price">₹215</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Cutlet <small>(1 pc)</small></h3><p class="menu-bengali">মাটন কাটলেট</p><p class="menu-price">₹219</p></div></div>
         </div>
       </div>
 
       <!-- Snacks -->
       <div class="tab-panel" id="tab-snacks" hidden>
         <div class="menu-grid">
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Samosa <small>(1 pc)</small></h3><p class="menu-bengali">সিঙাড়া</p><p class="menu-price">₹45</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Luchi and Aloo Dam <small>(3 pcs)</small></h3><p class="menu-bengali">লুচি ও আলুর দম</p><p class="menu-price">₹149</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Peas Kachori and Aloo Dam <small>(3 pcs)</small></h3><p class="menu-bengali">কড়াইশুঁটির কচুরি ও আলুর দম</p><p class="menu-price">₹159</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Heeng Kachori and Aloo Dam <small>(3 pcs)</small></h3><p class="menu-bengali">হিং কচুরি ও আলুর দম</p><p class="menu-price">₹154</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Roll</h3><p class="menu-bengali">আলু রোল</p><p class="menu-price">₹79</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Veg Chowmein</h3><p class="menu-bengali">ভেজ চাওমিন</p><p class="menu-price">₹124</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Luchi and Chicken Kosha <small>(3 pcs)</small></h3><p class="menu-bengali">লুচি ও মোরগ কষা</p><p class="menu-price">₹249</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Luchi and Mutton Kosha <small>(3+3 pcs)</small></h3><p class="menu-bengali">লুচি ও মাটন কষা</p><p class="menu-price">₹374</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Peas Kachori and Chicken Kosha <small>(3 pcs)</small></h3><p class="menu-bengali">কড়াইশুঁটির কচুরি ও মোরগ কষা</p><p class="menu-price">₹259</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Peas Kachori and Mutton Kosha <small>(3+3 pcs)</small></h3><p class="menu-bengali">কড়াইশুঁটির কচুরি ও মাটন কষা</p><p class="menu-price">₹384</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Heeng Kachori and Chicken Kosha <small>(3+3 pcs)</small></h3><p class="menu-bengali">হিং কচুরি ও মোরগ কষা</p><p class="menu-price">₹254</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Heeng Kachori and Mutton Kosha <small>(3+3 pcs)</small></h3><p class="menu-bengali">হিং কচুরি ও মাটন কষা</p><p class="menu-price">₹379</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Roll</h3><p class="menu-bengali">আলু রোল</p><p class="menu-price">₹79</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Veg Chowmein</h3><p class="menu-bengali">ভেজ চাওমিন</p><p class="menu-price">₹124</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Moghlai Parota <small>(1 pcs)</small></h3><p class="menu-bengali">ডিম মোঘলাই পরোটা</p><p class="menu-price">₹249</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Moghlai Parota <small>(1 pcs)</small></h3><p class="menu-bengali">মোরগ মোঘলাই পরোটা</p><p class="menu-price">₹299</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Moghlai Parota <small>(1 pcs)</small></h3><p class="menu-bengali">মাটন মোঘলাই পরোটা</p><p class="menu-price">₹399</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Roll</h3><p class="menu-bengali">এগ রোল</p><p class="menu-price">₹99</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Double Egg Roll</h3><p class="menu-bengali">ডবল এগ রোল</p><p class="menu-price">₹119</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Roll</h3><p class="menu-bengali">চিকেন রোল</p><p class="menu-price">₹129</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Chicken Roll</h3><p class="menu-bengali">এগ চিকেন রোল</p><p class="menu-price">₹139</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Double Egg Chicken Roll</h3><p class="menu-bengali">ডবল এগ চিকেন রোল</p><p class="menu-price">₹149</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Roll <small>(1 pc)</small></h3><p class="menu-bengali">মাটন রোল</p><p class="menu-price">₹187</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Moghlai Parota <small>(1 pc)</small></h3><p class="menu-bengali">ডিম মোঘলাই পরোটা</p><p class="menu-price">₹249</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Moghlai Parota <small>(1 pc)</small></h3><p class="menu-bengali">মোরগ মোঘলাই পরোটা</p><p class="menu-price">₹299</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Moghlai Parota <small>(1 pc)</small></h3><p class="menu-bengali">মাটন মোঘলাই পরোটা</p><p class="menu-price">₹399</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Chowmein</h3><p class="menu-bengali">এগ চাওমিন</p><p class="menu-price">₹138</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Chowmein</h3><p class="menu-bengali">চিকেন চাওমিন</p><p class="menu-price">₹187</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Chicken Chowmein</h3><p class="menu-bengali">এগ চিকেন চাওমিন</p><p class="menu-price">₹204</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Chowmein</h3><p class="menu-bengali">চিংড়ি চাওমিন</p><p class="menu-price">₹224</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Roll</h3><p class="menu-bengali">এগ রোল</p><p class="menu-price">₹99</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Double Egg Roll</h3><p class="menu-bengali">ডবল এগ রোল</p><p class="menu-price">₹119</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Egg Chicken Roll</h3><p class="menu-bengali">এগ চিকেন রোল</p><p class="menu-price">₹139</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Double Egg Chicken Roll</h3><p class="menu-bengali">ডবল এগ চিকেন রোল</p><p class="menu-price">₹149</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Roll</h3><p class="menu-bengali">চিকেন রোল</p><p class="menu-price">₹129</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Roll <small>(1 pcs)</small></h3><p class="menu-bengali">মাটন রোল</p><p class="menu-price">₹187</p></div></div>
         </div>
       </div>
 
       <!-- Biriyani -->
       <div class="tab-panel" id="tab-biriyani" hidden>
         <div class="menu-grid">
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken Biriyani <small>(Standard, 1 pc)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি</p><p class="menu-price">₹349</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken Biriyani <small>(Standard + Extra Rice, 1 pc)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি + অতিরিক্ত বিরিয়ানি রাইস</p><p class="menu-price">₹379</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken Biriyani <small>(Family, 3 pcs)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি (পরিবার)</p><p class="menu-price">₹649</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton Biriyani <small>(Standard, 1 pc)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি</p><p class="menu-price">₹549</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton Biriyani <small>(Standard + Extra Rice, 1 pc)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি + অতিরিক্ত বিরিয়ানি রাইস</p><p class="menu-price">₹579</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton Biriyani <small>(Family, 3 pcs)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি (পরিবার)</p><p class="menu-price">₹899</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken (Standard) <small>(1 pc)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken + Extra Rice <small>(1 pc)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি + অতিরিক্ত বিরিয়ানি</p><p class="menu-price">₹379</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Chicken (Family) <small>(3 pcs)</small></h3><p class="menu-bengali">কলকাতা মোরগ বিরিয়ানি (পরিবার)</p><p class="menu-price">₹649</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton (Standard) <small>(1 pc)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি</p><p class="menu-price">₹549</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton + Extra Rice <small>(1 pc)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি + অতিরিক্ত বিরিয়ানি</p><p class="menu-price">₹579</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kolkata Mutton (Family) <small>(3 pcs)</small></h3><p class="menu-bengali">কলকাতা মাটন বিরিয়ানি (পরিবার)</p><p class="menu-price">₹899</p></div></div>
         </div>
       </div>
 
-      <!-- Roti & Rice -->
-      <div class="tab-panel" id="tab-roti" hidden>
+      <!-- Roti &amp; Rice -->
+      <div class="tab-panel" id="tab-roti-rice" hidden>
         <div class="menu-grid">
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Roti (Phulka) <small>(1 pcs)</small></h3><p class="menu-bengali">রুটি (ফুলকা)</p><p class="menu-price">₹15</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Roti (Phulka) <small>(1 pc)</small></h3><p class="menu-bengali">রুটি (ফুলকা)</p><p class="menu-price">₹15</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Ghoroya Sada Parota <small>(2 pcs)</small></h3><p class="menu-bengali">ঘরোয়া সাদা পরোটা</p><p class="menu-price">₹49</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Peas Kochuri <small>(3 pcs)</small></h3><p class="menu-bengali">কড়াইশুঁটির কচুরি</p><p class="menu-price">₹99</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Sada Bhat</h3><p class="menu-bengali">সাদা ভাত</p><p class="menu-price">₹79</p></div></div>
@@ -288,9 +292,9 @@
       <!-- Dal -->
       <div class="tab-panel" id="tab-dal" hidden>
         <div class="menu-grid">
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Moong Dal <small>(Options Available)</small></h3><p class="menu-bengali">মুগ ডাল</p><p class="menu-price">₹119</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Moosur Dal</h3><p class="menu-bengali">মুসুর ডাল</p><p class="menu-price">₹79</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Narkel diye Chholar Dal</h3><p class="menu-bengali">নারকেল দিয়ে ছোলার ডাল</p><p class="menu-price">₹109</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Moong Dal</h3><p class="menu-bengali">মুগ ডাল</p><p class="menu-price">₹119</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Arohar Dal</h3><p class="menu-bengali">অড়হর ডাল</p><p class="menu-price">₹129</p></div></div>
         </div>
       </div>
@@ -298,20 +302,19 @@
       <!-- Veg -->
       <div class="tab-panel" id="tab-veg" hidden>
         <div class="menu-grid">
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Shukto</h3><p class="menu-bengali">শুক্তো</p><p class="menu-price">₹389</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloor Dom</h3><p class="menu-bengali">আলুর দম</p><p class="menu-price">₹249</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Posto</h3><p class="menu-bengali">আলু পোস্ত</p><p class="menu-price">₹299</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Mochar Ghonto</h3><p class="menu-bengali">মোচার ঘন্ট</p><p class="menu-price">₹319</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Kalo Jeere Aloo Bhaja</h3><p class="menu-bengali">কালো জিরে আলু ভাজা</p><p class="menu-price">₹99</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Begun Bori Torkari</h3><p class="menu-bengali">আলু বেগুন বড়ির তরকারি</p><p class="menu-price">₹219</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Phulkopir Jhol</h3><p class="menu-bengali">আলু ফুলকপির ঝোল</p><p class="menu-price">₹239</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Dom</h3><p class="menu-bengali">আলুর দম</p><p class="menu-price">₹249</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Potoler Jhol</h3><p class="menu-bengali">আলু পটলের ঝোল</p><p class="menu-price">₹249</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Posto (Khas Khas)</h3><p class="menu-bengali">আলু পোস্ত</p><p class="menu-price">₹299</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Potol Dorma</h3><p class="menu-bengali">পটলের দোরমা</p><p class="menu-price">₹299</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Kanchkolar Kofta</h3><p class="menu-bengali">কাঁচকলার কোফতা</p><p class="menu-price">₹299</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Panch Torkari</h3><p class="menu-bengali">পাঁচ তরকারি</p><p class="menu-price">₹299</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Mochar Ghonto</h3><p class="menu-bengali">মোচার ঘন্ট</p><p class="menu-price">₹319</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Naboratno Kari</h3><p class="menu-bengali">নবরত্ন কারি</p><p class="menu-price">₹319</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Potoler Jhol</h3><p class="menu-bengali">আলু পটলের ঝোল</p><p class="menu-price">₹249</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Begun Bori Torkari</h3><p class="menu-bengali">আলু বেগুন বড়ির তরকারি</p><p class="menu-price">₹219</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Aloo Phulkopir Jhol</h3><p class="menu-bengali">আলু ফুলকপির ঝোল</p><p class="menu-price">₹239</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Kalo Jeere Aloo Bhaja</h3><p class="menu-bengali">কালো জিরে আলু ভাজা</p><p class="menu-price">₹99</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Jhuri Aloo Bhaja <small>(Plate)</small></h3><p class="menu-bengali">ঝুরি আলু ভাজা</p><p class="menu-price">₹119</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Dhoka Dalna</h3><p class="menu-bengali">ধোঁকার ডালনা</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Shukto</h3><p class="menu-bengali">শুক্তো</p><p class="menu-price">₹389</p></div></div>
         </div>
       </div>
 
@@ -321,13 +324,13 @@
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Economic Thali <small>(Bhat · Dal · Bhaja)</small></h3><p class="menu-bengali">ভাত-ডাল-ভাজা</p><p class="menu-price">₹119</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Veg Thali</h3><p class="menu-bengali">নিরামিষ থালি</p><p class="menu-price">₹299</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Executive Veg Thali</h3><p class="menu-bengali">রাজকীয় নিরামিষ থালি</p><p class="menu-price">₹499</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Malaikari Thali</h3><p class="menu-bengali">চিংড়ির মালাইকারী থালি</p><p class="menu-price">₹549</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Rohu Thali <small>(1 pcs)</small></h3><p class="menu-bengali">রুই থালি</p><p class="menu-price">₹349</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Katla Thali <small>(1 pcs)</small></h3><p class="menu-bengali">কাতলা থালি</p><p class="menu-price">₹384</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Ilish Thali <small>(1 pcs)</small></h3><p class="menu-bengali">ইলিশ থালি</p><p class="menu-price">₹749</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Pabda Thali <small>(1 pcs)</small></h3><p class="menu-bengali">পাবদা থালি</p><p class="menu-price">₹649</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Rohu Thali <small>(1 pc fish)</small></h3><p class="menu-bengali">রুই থালি</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Katla Thali <small>(1 pc fish)</small></h3><p class="menu-bengali">কাতলা থালি</p><p class="menu-price">₹384</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Thali <small>(2 pcs)</small></h3><p class="menu-bengali">মোরগ থালি</p><p class="menu-price">₹449</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Mutton Thali <small>(2 pcs)</small></h3><p class="menu-bengali">মাটন থালি</p><p class="menu-price">₹549</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Prawn Malaikari Thali</h3><p class="menu-bengali">চিংড়ির মালাইকারী থালি</p><p class="menu-price">₹549</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Pabda Thali <small>(1 pc fish)</small></h3><p class="menu-bengali">পাবদা থালি</p><p class="menu-price">₹649</p></div></div>
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Ilish Thali <small>(1 pc fish)</small></h3><p class="menu-bengali">ইলিশ থালি</p><p class="menu-price">₹749</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Executive Non-Veg Thali</h3><p class="menu-bengali">রাজকীয় আমিষ থালি</p><p class="menu-price">₹849</p></div></div>
         </div>
       </div>
@@ -336,51 +339,43 @@
       <div class="tab-panel" id="tab-fish" hidden>
         <div class="fish-filters" role="tablist">
           <button class="fish-chip active" data-fish-filter="all">All</button>
-          <button class="fish-chip" data-fish-filter="katla">Katla</button>
           <button class="fish-chip" data-fish-filter="rohu">Rohu</button>
+          <button class="fish-chip" data-fish-filter="katla">Katla</button>
           <button class="fish-chip" data-fish-filter="hilsa">Hilsa</button>
           <button class="fish-chip" data-fish-filter="pabda">Pabda</button>
-          <button class="fish-chip" data-fish-filter="prawn">Prawn</button>
           <button class="fish-chip" data-fish-filter="bhetki">Bhetki</button>
+          <button class="fish-chip" data-fish-filter="prawn">Prawn</button>
         </div>
         <div class="menu-grid">
+          <div class="menu-group-label fish-rohu"><span>Rohu</span></div>
+          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Doi Rui <small>(2 pcs)</small></h3><p class="menu-bengali">দই রুই</p><p class="menu-price">₹234</p></div></div>
+          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Rui Kaliya <small>(2 pcs)</small></h3><p class="menu-bengali">রুই কালিয়া</p><p class="menu-price">₹234</p></div></div>
+          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Phulkopi diye Machher Jhol (Rui) <small>(2 pcs)</small></h3><p class="menu-bengali">ফুলকপি দিয়ে মাছের ঝোল (রুই)</p><p class="menu-price">₹199</p></div></div>
           <div class="menu-group-label fish-katla"><span>Katla</span></div>
           <div class="menu-card fish-katla"><span class="badge badge-nonveg"></span><div><h3>Doi Katla <small>(2 pcs)</small></h3><p class="menu-bengali">দই কাতলা</p><p class="menu-price">₹284</p></div></div>
           <div class="menu-card fish-katla"><span class="badge badge-nonveg"></span><div><h3>Katla Kaliya <small>(2 pcs)</small></h3><p class="menu-bengali">কাতলা কালিয়া</p><p class="menu-price">₹284</p></div></div>
-          <div class="menu-card fish-katla"><span class="badge badge-nonveg"></span><div><h3>Phulkopi diye Machher Jhol <small>(Katla, 2 pcs)</small></h3><p class="menu-bengali">ফুলকপি দিয়ে মাছের ঝোল (কাতলা)</p><p class="menu-price">₹219</p></div></div>
-
-          <div class="menu-group-label fish-rohu"><span>Rohu</span></div>
-          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Doi Rui <small>(2 pcs)</small></h3><p class="menu-bengali">দই রুই</p><p class="menu-price">₹234</p></div></div>
-          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Phulkopi diye Machher Jhol <small>(Rui, 2 pcs)</small></h3><p class="menu-bengali">ফুলকপি দিয়ে মাছের ঝোল (রুই)</p><p class="menu-price">₹199</p></div></div>
-          <div class="menu-card fish-rohu"><span class="badge badge-nonveg"></span><div><h3>Rui Kaliya <small>(2 pcs)</small></h3><p class="menu-bengali">রুই কালিয়া</p><p class="menu-price">₹234</p></div></div>
-
+          <div class="menu-card fish-katla"><span class="badge badge-nonveg"></span><div><h3>Phulkopi diye Machher Jhol (Katla) <small>(2 pcs)</small></h3><p class="menu-bengali">ফুলকপি দিয়ে মাছের ঝোল (কাতলা)</p><p class="menu-price">₹219</p></div></div>
           <div class="menu-group-label fish-hilsa"><span>Hilsa</span></div>
-          <div class="menu-card fish-hilsa"><span class="badge badge-nonveg"></span><div><h3>Ilish Paturi <small>(1 pcs)</small></h3><p class="menu-bengali">ইলিশ পাতুরি</p><p class="menu-price">₹464</p></div></div>
+          <div class="menu-card fish-hilsa"><span class="badge badge-nonveg"></span><div><h3>Ilish Paturi <small>(1 pc)</small></h3><p class="menu-bengali">ইলিশ পাতুরি</p><p class="menu-price">₹464</p></div></div>
           <div class="menu-card fish-hilsa"><span class="badge badge-nonveg"></span><div><h3>Ilish Bhapa <small>(2 pcs)</small></h3><p class="menu-bengali">ইলিশ ভাপা</p><p class="menu-price">₹599</p></div></div>
-          <div class="menu-card fish-hilsa"><span class="badge badge-nonveg"></span><div><h3>Sorshe Ilish <small>(2 pcs)</small></h3><p class="menu-bengali">সর্ষে ইলিশ</p><p class="menu-price">₹599</p></div></div>
-
+          <div class="menu-card fish-hilsa"><span class="badge badge-nonveg"></span><div><h3>Sorshe Ilish <small>(2 pcs)</small></h3><p class="menu-bengali">সরষে ইলিশ</p><p class="menu-price">₹599</p></div></div>
           <div class="menu-group-label fish-pabda"><span>Pabda</span></div>
           <div class="menu-card fish-pabda"><span class="badge badge-nonveg"></span><div><h3>Sorshe Pabda <small>(2 pcs)</small></h3><p class="menu-bengali">সর্ষে পাবদা</p><p class="menu-price">₹599</p></div></div>
-
-
-          <div class="menu-group-label fish-prawn"><span>Prawn</span></div>
-          <div class="menu-card fish-prawn"><span class="badge badge-nonveg"></span><div><h3>Prawn Malaikari <small>(4-6 pcs)</small></h3><p class="menu-bengali">চিংড়ির মালাইকারি</p><p class="menu-price">₹449</p></div></div>
-          <div class="menu-card fish-prawn"><span class="badge badge-nonveg"></span><div><h3>Prawn Sorshe Posto <small>(4-6 pcs)</small></h3><p class="menu-bengali">চিংড়ির সর্ষে পোস্ত</p><p class="menu-price">₹399</p></div></div>
-
-
-
           <div class="menu-group-label fish-bhetki"><span>Bhetki</span></div>
-          <div class="menu-card fish-bhetki"><span class="badge badge-nonveg"></span><div><h3>Bhetki Paturi <small>(1 pcs)</small></h3><p class="menu-bengali">ভেটকি পাতুরি</p><p class="menu-price">₹349</p></div></div>
+          <div class="menu-card fish-bhetki"><span class="badge badge-nonveg"></span><div><h3>Bhetki Paturi <small>(1 pc)</small></h3><p class="menu-bengali">ভেটকি পাতুরি</p><p class="menu-price">₹349</p></div></div>
           <div class="menu-card fish-bhetki"><span class="badge badge-nonveg"></span><div><h3>Bhetki Bhapa <small>(2 pcs)</small></h3><p class="menu-bengali">ভেটকি ভাপা</p><p class="menu-price">₹499</p></div></div>
+          <div class="menu-group-label fish-prawn"><span>Prawn</span></div>
+          <div class="menu-card fish-prawn"><span class="badge badge-nonveg"></span><div><h3>Prawn Malaikari <small>(4-6 pcs)</small></h3><p class="menu-bengali">চিংড়ির মালাইকারী</p><p class="menu-price">₹449</p></div></div>
+          <div class="menu-card fish-prawn"><span class="badge badge-nonveg"></span><div><h3>Prawn Sorshe Posto (Khas Khas) <small>(4-6 pcs)</small></h3><p class="menu-bengali">চিংড়ির সর্ষে পোস্ত</p><p class="menu-price">₹399</p></div></div>
         </div>
       </div>
 
       <!-- Chicken -->
       <div class="tab-panel" id="tab-chicken" hidden>
         <div class="menu-grid">
+          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Chaap <small>(1 pc)</small></h3><p class="menu-bengali">মোরগের চাপ</p><p class="menu-price">₹349</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Kosha <small>(4 pcs)</small></h3><p class="menu-bengali">মোরগ কষা</p><p class="menu-price">₹349</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Ghoroya Chickener Jhol <small>(4 pcs)</small></h3><p class="menu-bengali">ঘরোয়া মোরগের ঝোল</p><p class="menu-price">₹319</p></div></div>
-          <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Chaap <small>(1 pcs)</small></h3><p class="menu-bengali">মোরগের চাপ</p><p class="menu-price">₹349</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Kachalonka Chicken <small>(4 pcs)</small></h3><p class="menu-bengali">কাঁচালঙ্কা মোরগ</p><p class="menu-price">₹319</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Golbari Chicken <small>(4 pcs)</small></h3><p class="menu-bengali">গোলবাড়ি মোরগ</p><p class="menu-price">₹399</p></div></div>
           <div class="menu-card"><span class="badge badge-nonveg"></span><div><h3>Chicken Dakbanglow <small>(4 pcs)</small></h3><p class="menu-bengali">মোরগ ডাকবাংলো</p><p class="menu-price">₹424</p></div></div>
@@ -401,17 +396,19 @@
       <div class="tab-panel" id="tab-sweets" hidden>
         <div class="menu-grid">
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Nabadwip Mishti Doi <small>(100 gm)</small></h3><p class="menu-bengali">নবদ্বীপের মিষ্টি দই</p><p class="menu-price">₹99</p></div></div>
-          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Rosogolla <small>(1 pcs)</small></h3><p class="menu-bengali">রসগোল্লা</p><p class="menu-price">₹45</p></div></div>
+          <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Rosogolla <small>(1 pc)</small></h3><p class="menu-bengali">রসগোল্লা</p><p class="menu-price">₹45</p></div></div>
         </div>
       </div>
 
-      <!-- Chatni & Tea -->
-      <div class="tab-panel" id="tab-chatni" hidden>
+      <!-- Chatni &amp; Tea -->
+      <div class="tab-panel" id="tab-chatni-tea" hidden>
         <div class="menu-grid">
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Tomato Chatni</h3><p class="menu-bengali">টমেটোর চাটনি</p><p class="menu-price">₹99</p></div></div>
           <div class="menu-card"><span class="badge badge-veg"></span><div><h3>Darjeeling Tea</h3><p class="menu-bengali">দার্জিলিং চা</p><p class="menu-price">₹29</p></div></div>
         </div>
       </div>
+
+      <!-- MENU-PANELS:END -->
 
       <div class="menu-download">
         <p>Want the full menu?</p>
@@ -772,10 +769,10 @@
     <button id="lb-next" aria-label="Next">&#8250;</button>
   </div>
 
-  <script src="js/promo-video.js?v=202611181636"></script>
-  <script src="js/nav.js?v=202611181636"></script>
-  <script src="js/menu-tabs.js?v=202611181636"></script>
-  <script src="js/gallery.js?v=202611181636"></script>
-  <script src="js/feedback.js?v=202611181636"></script>
+  <script src="js/promo-video.js?v=202611221818"></script>
+  <script src="js/nav.js?v=202611221818"></script>
+  <script src="js/menu-tabs.js?v=202611221818"></script>
+  <script src="js/gallery.js?v=202611221818"></script>
+  <script src="js/feedback.js?v=202611221818"></script>
 </body>
 </html>

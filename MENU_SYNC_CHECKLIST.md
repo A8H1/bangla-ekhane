@@ -11,46 +11,44 @@ decision this follows.
   the same sheet — that's the separate stall menu (different portions/pricing),
   mapped to `stall-menu.pdf`, not the website.
 
-## 2. Diff against the live site
-For every section (Starter, Fish, Chicken, Mutton, Combo, Veg, Dal, Rice, Roti,
-Sweets, Chatni, Chef's Special), compare the sheet row-by-row against the
-`menu-card` divs in `index.html`:
-- Item name (English + Bengali)
-- Qty/portion note
-- Price
-- Veg/non-veg badge (not stated in the sheet — infer from the dish, e.g. Bengali
-  sweets and Samosa are veg)
+## 2. Diff against `menu/menu.json`
+`menu/menu.json` is now the single source of truth for the menu. Both the
+downloadable PDF and the website's menu tabs are generated from it, so they can
+no longer drift apart. For every section, compare the sheet row-by-row against
+`menu.json`:
+- Item name (English + Bengali `bn`)
+- Qty/portion note (`qty`, written as it should print, e.g. `1 pc`, `3+3 pcs`, `Plate`)
+- Price (dine-in price only; Swiggy/Zomato prices are not shown)
+- Veg/non-veg (`veg: true/false`; eggs count as non-veg)
 
-Known intentional divergence: some items sit in a different tab on the site than
-in the sheet (e.g. Egg Roll, Egg Chicken Roll, Luchi and Aloo Dam are filed under
-Chef's Special on the site but under Starter/Combo in the sheet). That's a prior
-reorganization, not a data error — don't "fix" it back. Only flag it if the price
-no longer matches.
+Fish dishes also carry a `group` (katla, rohu, hilsa, pabda, bhetki, prawn) that
+drives the website's fish filter chips.
 
-## 3. Edit `index.html`
-Add/update the affected `menu-card` divs directly. This is the source of truth the
-PDF and carousels are generated from.
+## 3. Edit `menu/menu.json`
+Add/update/remove items in the right section, in the order they should appear.
+Sections appear in the PDF and on the site in the order listed. `pdf_pages`
+says which sections go on which PDF page (page 4, the illustrated thali guide,
+is inserted unchanged from `menu/assets/thali-guide-page.pdf`).
 
-## 4. Regenerate the downloadable PDF
+## 4. Rebuild
 ```
-cp index.html <tmp>/index.html          # extract_menu.py reads a relative path
-python3 extract_menu.py > menu_data.json
-python3 build_menu_pdf.py               # writes menu_preview.html
-<Chrome> --headless --disable-gpu --print-to-pdf=Bangla_Ekhane_Menu.pdf \
-  --no-pdf-header-footer --run-all-compositor-stages-before-draw \
-  --virtual-time-budget=10000 file://.../menu_preview.html
+python3 menu/build_menu.py
 ```
-Verify before copying into the repo:
-- `pdfinfo` → still 4 pages, A4
-- `pdftotext` → new/changed item names show up
-- `pdftoppm` the affected page → visually confirm no overflow/clipping, correct
-  veg/non-veg badge colors
-- Copy to `assets/menu/Bangla_Ekhane_Menu.pdf`
+This rewrites `assets/menu/Bangla_Ekhane_Menu.pdf` and the menu tabs in
+`index.html` (between the `MENU-TABS` / `MENU-PANELS` markers — don't hand-edit
+inside them). Needs Python 3 with `playwright` (Chrome/Chromium) and `pikepdf`.
+If a page overflows, the build stops and names the page: move a section to
+another page in `pdf_pages`.
+
+Verify before shipping:
+- `pdftotext -layout assets/menu/Bangla_Ekhane_Menu.pdf -` → new/changed items show up
+- `pdftoppm` the affected page → visually confirm layout
+- open `index.html` → click the affected tab
 
 ## 5. Regenerate carousel collateral (if it exists downstream)
 The `full-menu-story` (and `full-menu-square`) Instagram/WhatsApp carousels in
 `~/Downloads/bangla-ekhane-collaterals/carousel-slides/` are generated from the
-same `menu_data.json`, via `build_carousel_v2.py`. Only the middle data-driven
+same menu data (now `menu/menu.json`), via `build_carousel_v2.py`. Only the middle data-driven
 slides need regenerating — slide 1 (title) and the last slide (CTA) are static.
 Regenerate, convert PNG→JPG, visually spot-check the affected slide, then replace
 in the Downloads folder. These are offline/print collateral, not part of the repo.
@@ -58,7 +56,7 @@ in the Downloads folder. These are offline/print collateral, not part of the rep
 ## 6. Ship
 - `git fetch origin arpan-feedback` and confirm this branch is a clean fast-forward
   (no divergence) before pushing.
-- Commit `index.html` + the regenerated PDF together.
+- Commit `menu/menu.json`, `index.html` and the regenerated PDF together.
 - Push directly to `arpan-feedback` (no PR — see deploy workflow).
 - Spot-check the live site (`curl` or browser) once GitHub Pages picks it up.
 
