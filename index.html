@@ -41,7 +41,7 @@
   </script>
 
   <link rel="preload" as="image" href="assets/images/hero-bg-banner.jpg" fetchpriority="high" />
-  <link rel="stylesheet" href="css/style.css?v=202611241214" />
+  <link rel="stylesheet" href="css/style.css?v=202611241220" />
 </head>
 <body>
 
@@ -425,91 +425,70 @@
       <div class="catering-eyebrow"><span class="live-dot"></span>Our Journey</div>
       <h2 class="section-title">Where We've Popped Up</h2>
       <p class="section-subtitle">আমাদের যাত্রা</p>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">24 Jul 2026</span>
-            <h3>Candeur Landmark</h3>
+      <!-- Pop-up stalls: put future stalls in .pop-upcoming (earliest first), past ones in .pop-row (newest first).
+           A stall in .pop-upcoming moves into the row by itself once its date (data-date) has passed. -->
+      <div class="pop-journey">
+        <div class="pop-up-wrap">
+          <p class="pop-kicker">Coming up</p>
+          <div class="pop-upcoming">
+          <div class="pop-ticket" data-date="2026-11-28">
+            <div class="pop-stub"><b>28</b><span>Nov</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Suncity Gloria</h3><p>Pop-up stall</p></div>
+          </div>
+          <div class="pop-ticket" data-date="2026-11-29">
+            <div class="pop-stub"><b>29</b><span>Nov</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Provident Park Square</h3><p>Pop-up stall</p></div>
+          </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">25 Jul 2026</span>
-            <h3>Ruchira Iris</h3>
+        <p class="pop-stats"><strong class="pop-n-stalls"></strong> stalls so far &middot; <strong class="pop-n-comm"></strong> communities</p>
+        <div class="pop-scroller">
+          <button class="pop-arrow prev" type="button" aria-label="Newer stalls">&lsaquo;</button>
+          <div class="pop-row">
+          <div class="pop-ticket" data-date="2026-11-09">
+            <div class="pop-stub"><b>9</b><span>Nov</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Bren Edgewaters</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">15 Aug 2026</span>
-            <h3>Sobha Dream Acres</h3>
+          <div class="pop-ticket" data-date="2026-11-01">
+            <div class="pop-stub"><b>1</b><span>Nov</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>DSR White Waters</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">13 Sep 2026</span>
-            <h3>Ahad Excellencia</h3>
+          <div class="pop-ticket" data-date="2026-10-31">
+            <div class="pop-stub"><b>31</b><span>Oct</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>CLPD Arcadia &amp; DSR Highland Greenz</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">26 Sep 2026</span>
-            <h3>Brigade Golden Triangle</h3>
+          <div class="pop-ticket wide" data-date="2026-10-18">
+            <div class="pop-stub"><b>🪔</b><span>Oct</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Candeur Signature, Candeur Landmark, Arya Cultural Association &amp; Varthur Bengali Association</h3><p>Durga Puja · CSK Mall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">11 Oct 2026</span>
-            <h3>Provident Park Square</h3>
+          <div class="pop-ticket" data-date="2026-10-11">
+            <div class="pop-stub"><b>11</b><span>Oct</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Provident Park Square</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Durga Puja 2026</span>
-            <h3>Candeur Signature, Candeur Landmark, Arya Cultural Association &amp; Varthur Bengali Association (CSK Mall)</h3>
+          <div class="pop-ticket" data-date="2026-09-26">
+            <div class="pop-stub"><b>26</b><span>Sep</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Brigade Golden Triangle</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">31 Oct 2026</span>
-            <h3>CLPD Arcadia &amp; DSR Highland Greenz</h3>
+          <div class="pop-ticket" data-date="2026-09-13">
+            <div class="pop-stub"><b>13</b><span>Sep</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Ahad Excellencia</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">1 Nov 2026</span>
-            <h3>DSR White Waters</h3>
+          <div class="pop-ticket" data-date="2026-08-15">
+            <div class="pop-stub"><b>15</b><span>Aug</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Sobha Dream Acres</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">9 Nov 2026</span>
-            <h3>Bren Edgewaters</h3>
+          <div class="pop-ticket" data-date="2026-07-25">
+            <div class="pop-stub"><b>25</b><span>Jul</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Ruchira Iris</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item is-upcoming" data-event-date="2026-11-28">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">28 Nov 2026</span><span class="timeline-badge">Upcoming</span>
-            <h3>Suncity Gloria</h3>
+          <div class="pop-ticket" data-date="2026-07-24">
+            <div class="pop-stub"><b>24</b><span>Jul</span><i>2026</i></div>
+            <div class="pop-body"><span class="pop-badge">Upcoming</span><h3>Candeur Landmark</h3><p>Pop-up stall</p></div>
           </div>
-        </div>
-        <div class="timeline-item is-upcoming" data-event-date="2026-11-29">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">29 Nov 2026</span><span class="timeline-badge">Upcoming</span>
-            <h3>Provident Park Square</h3>
           </div>
+          <button class="pop-arrow next" type="button" aria-label="Earlier stalls">&rsaquo;</button>
         </div>
+        <p class="pop-hint">Swipe to see earlier stalls &rarr;</p>
       </div>
       <div class="events-restaurant-note">
         <p>More pop-up stalls coming soon &mdash; follow our WhatsApp for the next location!</p>
@@ -824,10 +803,10 @@
     <button id="lb-next" aria-label="Next">&#8250;</button>
   </div>
 
-  <script src="js/promo-video.js?v=202611241214"></script>
-  <script src="js/nav.js?v=202611241214"></script>
-  <script src="js/menu-tabs.js?v=202611241214"></script>
-  <script src="js/gallery.js?v=202611241214"></script>
-  <script src="js/feedback.js?v=202611241214"></script>
+  <script src="js/promo-video.js?v=202611241220"></script>
+  <script src="js/nav.js?v=202611241220"></script>
+  <script src="js/menu-tabs.js?v=202611241220"></script>
+  <script src="js/gallery.js?v=202611241220"></script>
+  <script src="js/feedback.js?v=202611241220"></script>
 </body>
 </html>
