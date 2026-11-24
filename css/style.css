@@ -160,6 +160,8 @@ h3 { font-size: 1.1rem; }
 }
 .nav-links a:hover { color: var(--primary); }
 .nav-cta { padding: 8px 20px !important; font-size: 0.82rem !important; }
+.nav-links a.nav-cta { color: var(--white); letter-spacing: 0.5px; }
+.nav-links a.nav-cta:hover { color: var(--white); background: #a8481a; }
 .nav-hamburger {
   display: none;
   flex-direction: column; gap: 5px;
