@@ -667,7 +667,8 @@ h3 { font-size: 1.1rem; }
   margin-top: 36px;
   justify-content: center;
 }
-.about-pills span {
+.about-pills span,
+.about-pills .about-pill-link {
   background: rgba(255,255,255,0.08);
   border: 1.5px solid rgba(200,145,10,0.6);
   color: var(--white);
@@ -1235,3 +1236,6 @@ h3 { font-size: 1.1rem; }
   .pop-row .pop-ticket { flex-basis: 78%; }
   .pop-row .pop-ticket.wide { flex-basis: 88%; }
 }
+
+.about-pills .about-pill-link { background: var(--accent); border-color: var(--accent); text-decoration: none; transition: background .2s, transform .2s; }
+.about-pills .about-pill-link:hover { background: #d9a21a; transform: translateY(-1px); }
